@@ -3,12 +3,12 @@
 var BasicCard = function(front, back) {
 	this.front = front;
 	this.back = back;
+	this.card;
+};
+
+BasicCard.prototype.basicCreator = function(){
+	this.card = this.front + "," + this.back + ",";
+	return this.card;
 }
-
-
-// test variables for BasicCard
-var testBasic = new BasicCard("this is the front", "this is the back");
-
-console.log(testBasic.front, testBasic.back);
 
 module.exports = BasicCard;

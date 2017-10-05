@@ -4,6 +4,7 @@ var ClozeCard = function(text, cloze) {
 	this.fullText = text;
 	this.cloze = cloze;
 	this.partial; 
+	this.card;
 };
 
 ClozeCard.prototype.clozeCreator = function() {
@@ -11,14 +12,9 @@ ClozeCard.prototype.clozeCreator = function() {
 		console.log("an error has occurred. '" + this.cloze + "' is not found in '" + this.fullText+ "'.");
 	}else{
 		this.partial = this.fullText.replace(this.cloze, "...");
-		console.log(this.partial);
+		this.card = this.partial + "," + this.cloze + ",";
+		return this.card;
 	}
 }
-
-//test variables for ClozeCard 
-var testCloze = new ClozeCard("I like to eat mushrooms", "mushrooms");
-testCloze.clozeCreator();
-var testError = new ClozeCard("I like mushrooms", "carrots");
-testError.clozeCreator();
 
 module.exports = ClozeCard;

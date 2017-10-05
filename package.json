@@ -1,0 +1,22 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "a flashcard generator",
+  "main": "BasicCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Momojunzi/Flashcard-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Momojunzi/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/Momojunzi/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.3.0"
+  }
+}
